@@ -1,0 +1,90 @@
+.pace .pace-progress {background: #b4880f;position: fixed;z-index: 2000;top: 0;left: 0;height: 2px;-webkit-transition: width 1s;-moz-transition: width 1s;-o-transition: width 1s;transition: width 1s;}
+.pace-inactive {display: none;}
+.pace {-webkit-pointer-events: none;pointer-events: none;-webkit-user-select: none;-moz-user-select: none;user-select: none;}
+.pace .pace-activity {display: block;position: fixed;z-index: 2000;top: 0;right: 0;width: 300px;height: 300px;background: #b4880f;-webkit-transition: -webkit-transform 0.3s;transition: transform 0.3s;-webkit-transform: translateX(100%) translateY(-100%) rotate(45deg);transform: translateX(100%) translateY(-100%) rotate(45deg);pointer-events: none;}
+.pace.pace-active .pace-activity {-webkit-transform: translateX(50%) translateY(-50%) rotate(45deg);transform: translateX(50%) translateY(-50%) rotate(45deg);}
+.pace .pace-activity::before,
+.pace .pace-activity::after {position: absolute;bottom: 30px;left: 50%;display: block;border: 5px solid #fff;border-radius: 50%;content: '';}
+.pace .pace-activity::before {margin-left: -40px;width: 80px;height: 80px;border-right-color: rgba(0, 0, 0, .2);border-left-color: rgba(0, 0, 0, .2);-webkit-animation: pace-rotation 3s linear infinite;animation: pace-rotation 3s linear infinite;}
+.pace .pace-activity::after {bottom: 50px;margin-left: -20px;width: 40px;height: 40px;border-top-color: rgba(0, 0, 0, .2);border-bottom-color: rgba(0, 0, 0, .2);-webkit-animation: pace-rotation 1s linear infinite;animation: pace-rotation 1s linear infinite;}
+@-webkit-keyframes pace-rotation {0% { -webkit-transform: rotate(0deg); }100% { -webkit-transform: rotate(359deg); }}
+@keyframes pace-rotation {0% { transform: rotate(0deg); }100% { transform: rotate(359deg); }}
+body{margin: 0; font-family:'Open Sans', 'Microsoft Yi Baiti', 'Arial Light', Sans-Serif, Unicode;}
+header{width:100%;height: auto;background: rgba(0,0,0,1);position: fixed;}
+header > section{width: 80%;height: 120px;margin: auto;}
+header > section > aside{width:30%;height:120px;float:left;}
+header > section > nav{width:70%;height:30px;float:right;text-align: right;color: #a78121;padding-top: 90px;}
+header > section > nav > a{display: inline-block;margin-left:10px;margin-right:10px;height:30px;color:#fff;text-decoration:none; font-size:0.85em;letter-spacing:0.15em;}
+header > section > nav > a:hover{color:#a78121;}
+header > #readytowear{width:100%;height:240px;background:#000;box-shadow:0px 1px 10px #111;border-bottom:1px solid #111;}
+header > #readytowear > nav{width:30%;height:240px;float:left;padding:0;}
+header > #readytowear > nav > a{display:block;border-right:1px solid #fff;width:100%;height:46px;float:left;margin:0;padding-top:33px;text-align:center;border-bottom:1px solid #fff;transition:all 1s;font-size: 1em;letter-spacing: 0.2em;}
+header > #readytowear > nav > a:hover{background:#fff;}
+header > #readytowear > nav > a:nth-child(3){border-bottom:0px;}
+header > #readytowear > div{width:69.9%;height:240px;float:right;text-align: center;}
+header > #readytowear > div > div{width:100%;height:240px;margin: auto; }
+header > #readytowear > div > div > img{width:30%;height:100%;margin:0;opacity:0.8;transition:all 1s;cursor:pointer;}
+header > #readytowear > div > div > img:hover{opacity:1.0;}
+header > #account{width:100%;height:auto;background:#0a0a0a;box-shadow:0px 1px 5px #000;}
+header > #account > nav.account{width:100%;height:80px;padding:0;margin:0;}
+header > #account > nav > a{display:inline-block;width:49.9%;height:46px;border-bottom:1px solid #fff;border-left:1px solid #fff;margin:0;text-align:center;padding-top:25px;border-top:1px solid #fff;transition:all 1s;font-size: 1em; letter-spacing: 0.2em;}
+header > #account > nav > a:hover{background:#fff;}
+header > #account > nav > a:nth-child(1){border-left:0px}
+header > #account > div{width:100%;height:auto;}
+header > #account > div > form > table,th,td{width: 70%;margin: auto;color:#fff;font-size:1.5em;color: #a78121;letter-spacing:0.14em;}
+#signintxt{width:100%;height:35px;padding-left:15px;margin:auto;border:1px solid #000;border-radius:3px;}
+#signintxt2{width:50%;height:35px;padding-left:15px;margin:auto;border:1px solid #000;border-radius:3px;}
+#signinbtn{width:100%;height:40px;border:0px;border-radius:3px;background:#a78121;color:#fff;font-size:0.55em;font-family:'Open Sans', 'Microsoft Yi Baiti', 'Arial Light', Sans-Serif, Unicode;letter-spacing:0.15em;cursor:pointer;}
+#createnewsignin{font-size:0.4em;color: #fff;letter-spacing:0.14em;}
+#createnewsignin > a{color: #a78121;}
+
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: #ad8118;
+}
+
+
+::selection {
+    color: #fff;
+    background: #ad8118;
+}
+
+@media (min-width: 767px) {
+.navbar-nav {
+    margin-top:85px;
+}
+
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: auto;
+}
+}
+@media (max-width: 767px) {
+    .navbar-nav > li > a {
+		margin-top:0px;
+		line-height: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#headerimage{
+		text-align:center;
+	}
+}
+article{width:100%;height:670px;padding-top:120px;}
+article > section:nth-child(1){width:100%;height:100%;}
+#pics{width:100%;height:100%;}
+article.two{height:auto;margin-top:-120px;}
+article.two > section > div{width:90%;height:550px;background:#444;margin: auto;}
+footer{width:100%;height:auto;background:#111;}
+footer > article{width:100%;height:auto;background:#ad8118;}
+footer > article > h1::selection {color: #fff;background: #333333;}
+footer > article > p::selection {color: #fff;background: #333333;}
+footer > #footerdata{width:80%;height:auto;margin-top:15px;margin: auto; font-size:0.8em;}
+footer > #footerdata > .row > div{height:auto;padding:20px;color:#eeeeee;}
+footer > #footerdata > .row > div > h3{font-weight:lighter;color:#ad8118;text-align:left; letter-spacing:0.3em;padding-bottom:10px;}
+footer > #footerdata > .row > div > p{line-height:20px; letter-spacing:0.2em;}
+footer > #footerdata > .row > div > p > span{color:#ccc;margin-right:05px;}
+footer > #footerdata > .row > div > p > big{font-size:1.6em;letter-spacing:0.2em;color:#ad8118;line-height:40px;font-weight:lighter;}
+footer > #footerdata > .row > div > p > a{color:#eee;text-decoration: none;}
+
